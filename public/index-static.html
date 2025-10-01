@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oheor - Aprender nunca ficou tão fácil</title>
+    <meta name="description" content="Plataforma educacional que conecta professores e alunos qualificados. Horários flexíveis, tecnologia avançada e suporte total.">
+    <meta name="author" content="Oheor">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Oheor - Aprender nunca ficou tão fácil">
+    <meta property="og:description" content="Plataforma educacional que conecta professores e alunos qualificados. Horários flexíveis, tecnologia avançada e suporte total.">
+    <meta property="og:type" content="website">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-left">
+                <a href="/" class="logo">Oheor</a>
+                <div class="navbar-links">
+                    <a href="#" class="nav-link">Encontrar professores <span class="arrow">&gt;</span></a>
+                    <a href="#" class="nav-link">Seja um Professor <span class="arrow">&gt;</span></a>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <button class="btn btn-ghost">Entrar</button>
+                <button class="btn btn-animated">Registrar</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Aprender nunca<br>ficou tão fácil!
+                </h1>
+                <button class="btn btn-animated btn-lg">Comece agora!</button>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <div class="search-input-wrapper">
+                            <i data-lucide="search" class="search-icon"></i>
+                            <input 
+                                type="text" 
+                                class="search-input" 
+                                placeholder="Disciplina, nome do curso ou palavras chave..."
+                                id="searchInput"
+                            >
+                        </div>
+                        <button class="btn btn-animated" onclick="handleSearch()">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="dollar-sign"></i>
+                    </div>
+                    <h3 class="feature-title">Ganhe uma renda extra diariamente</h3>
+                    <p class="feature-description">
+                        Defina seu próprio preço e torna suas paixões em lucros. Professores ganham em torno de R$ 10.000 por aula
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h3 class="feature-title">Horários Flexíveis</h3>
+                    <p class="feature-description">
+                        Ensine quando quiser, onde quiser. Monte sua agenda de acordo com sua disponibilidade e estilo de vida
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <h3 class="feature-title">Alunos Qualificados</h3>
+                    <p class="feature-description">
+                        Nossa plataforma conecta você com alunos motivados e comprometidos com a aprendizagem
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="smartphone"></i>
+                    </div>
+                    <h3 class="feature-title">Tecnologia Avançada</h3>
+                    <p class="feature-description">
+                        Ferramentas intuitivas para aprendizando, pagamento integrado e comunicação totalmente integrada
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <h3 class="feature-title">Reconhecimento</h3>
+                    <p class="feature-description">
+                        Sistema de avaliações que destaca seu trabalho e ajuda a construir sua reputação de excelência
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="handshake"></i>
+                    </div>
+                    <h3 class="feature-title">Suporte Total</h3>
+                    <p class="feature-description">
+                        Equipe dedicada para ajudar você a obter sucesso, desde o cadastro até a realização das aulas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos professores dizem</h2>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Em 6 meses no OhProf, consegui triplicar minha renda dando aulas online. A plataforma é intuitiva e transparente, sempre fui tratado com respeito."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JP</div>
+                        <div class="author-info">
+                            <p class="author-name">João Pedro</p>
+                            <p class="author-role">Professor de Matemática</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "O sistema de pagamentos é muito eficiente. Recebo meus pagamentos com agilidade e o suporte sempre me ajuda quando preciso."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CA</div>
+                        <div class="author-info">
+                            <p class="author-name">Carlos Andrade</p>
+                            <p class="author-role">Professor de Inglês</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "A flexibilidade de horários me permitiu conciliar dando aulas enquanto faço meu doutorado para todos os meus alunos."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CL</div>
+                        <div class="author-info">
+                            <p class="author-name">Carmen Lúcia</p>
+                            <p class="author-role">Professora de Química</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <h2>Oh<span class="highlight">Prof!</span></h2>
+            </div>
+
+            <!-- Links -->
+            <nav class="footer-links">
+                <a href="#">Fale Conosco</a>
+                <a href="#">Conta e Segurança</a>
+                <a href="#">Termos e condições de uso</a>
+                <a href="#">Código de conduta</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Sobre Nós</a>
+            </nav>
+
+            <!-- Social -->
+            <div class="footer-social-section">
+                <p class="social-label">Social</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <i data-lucide="facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i data-lucide="youtube"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>© Copyright 2025 - OhProf - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
